@@ -1,0 +1,20 @@
+# Network configuration
+ip_range:
+  start: "192.168.2.114"
+  end: "192.168.2.115"
+whitelist:
+  - "192.168.2.111"
+passlist:
+  - "192.168..121"
+
+# Ping configuration
+retry_attempts: 3
+retry_interval: 1 # seconds
+iteration_interval: 3
+
+# GPIO configuration
+gpio_pin: 17
+
+# Logging configuration
+log_file: "network_monitor.log"
+log_level: "INFO"
