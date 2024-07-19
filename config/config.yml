@@ -1,0 +1,28 @@
+# Network Monitor Configuration
+
+# IP Range to scan
+ip_range:
+  start: "192.168.2.114"
+  end: "192.168.2.115"
+
+# IPs to ignore during scan
+passlist:
+  - "192.168.2.121"
+
+# IPs to always monitor (even if outside range)
+whitelist:
+  - "192.168.2.111"
+
+# Relay configuration
+relay:
+  pin: 17
+
+# Scan intervals (in seconds)
+scan_interval:
+  success: 5 # Scan every 60 seconds after successful ping
+  failure: 2 # Scan every 30 seconds after activation
+
+# Retry configuration
+retry:
+  count: 3
+  delay: 1 # Seconds between retries
